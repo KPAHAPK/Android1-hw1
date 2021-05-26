@@ -7,20 +7,21 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/linear_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:layout_margin="50dp"
         android:background="#ADEF8321"
-        android:layout_margin="50dp">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/text_view"
-            android:hint="Result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="100dp"
-            android:padding="25dp"/>
+            android:hint="Result"
+            android:padding="25dp" />
 
         <EditText
             android:id="@+id/edit_text"
@@ -28,52 +29,69 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@color/design_default_color_background"
-            android:padding="16dp"
-            android:hint="Enter text"/>
+            android:hint="Enter text"
+            android:padding="16dp" />
 
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/switch_compact"
-            android:text="Bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:padding="16dp"
             android:background="#affbceed"
-            android:textStyle="bold"/>
+            android:padding="16dp"
+            android:text="Bold"
+            android:textStyle="bold" />
 
         <CheckBox
             android:id="@+id/check_box"
-            android:text="@string/check_box"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:padding="16dp"
             android:background="@color/design_default_color_error"
+            android:padding="16dp"
+            android:text="@string/check_box"
             android:textColorHint="@color/design_default_color_on_primary" />
 
         <ToggleButton
             android:id="@+id/toggle_button"
-            android:textOff="lower case"
-            android:textOn="UPPER CASE"
-            android:textAllCaps="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:padding="16dp"
             android:background="@color/cardview_shadow_start_color"
-            android:fontFamily="serif"/>
+            android:fontFamily="serif"
+            android:padding="16dp"
+            android:textAllCaps="false"
+            android:textOff="lower case"
+            android:textOn="UPPER CASE" />
 
         <Button
             android:id="@+id/button"
-            android:text="Show result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:padding="16dp"
             android:backgroundTint="@color/black"
             android:fontFamily="casual"
-            android:textSize="60px"/>
+            android:padding="16dp"
+            android:text="Show result"
+            android:textSize="60px" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:padding="5dp"
+                android:text="Next"
+                android:textSize="35px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
 
