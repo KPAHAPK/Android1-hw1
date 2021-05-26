@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">hw1</string>
+    <string name="check_box"><u>Underline</u></string>
 </resources>
